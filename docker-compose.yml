@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Alex02102003.
+      POSTGRES_DB: alex
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/bitnami/postgresql/data
+
+volumes:
+  postgres_data:
